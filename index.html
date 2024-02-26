@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="num">
-            <div>12</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>11</div>
-            <div>10</div>
-        </div>
-
+  <div class="main">
+    <div id="hand-wrapper">
+      <div id="hand"></div>
     </div>
+    <div id="hand-wrapper2">
+      <div id="hand2"></div>
+    </div>
+    <div id="hand-wrapper3">
+      <div id="hand3"></div>
+    </div>
+    
+
+
+    <span style="--i:12;">12</span>
+    <span id="h10" style="--i:1;">1</span>
+    <span style="--i:2;">2</span>
+    <span style="--i:3;">3</span>
+    <span style="--i:4;">4</span>
+    <span style="--i:5;">5</span>
+    <span style="--i:6;">6</span>
+    <span style="--i:7;">7</span>
+    <span style="--i:8;">8</span>
+    <span style="--i:9;">9</span>
+    <span style="--i:11;">11</span>
+    <span style="--i:10;">10</span>
+
+
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

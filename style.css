@@ -1,31 +1,101 @@
-html {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
-  }
+*{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
 body{
-    display: flex;
+  display: flex;
 justify-content: center;
 align-items: center;
+background-color: rgba(0, 0, 0, 0.95);
+min-height: 100vh;
 }
 .main{
-    background-color: rgb(197, 197, 197);
-    border-radius: 50%;
-    border: 8px solid black;
-    width: 300px;
-    height: 300px;
-
-  }
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  border: 4px solid #4deeea ;
+box-shadow: 0 0 10px #4deeea,
+            0 0 20px #4deeea,
+            0 0 30px #4deeea;
+            /* 0 0 40px #4deeea,
+            0 0 50px #4deeea; */
   
 
-.main div{
-    color: white;
-    font-size: 40px;
-   background-color: aquamarine;
-    transform: rotate(360deg);
+  width: 300px;
+  height: 300px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 
-    
+}
+.main span{
+color:white;
+font-size: 30px;
+position: absolute;
+transform: rotate(calc(30deg * var(--i)));
+text-align: center;
+
+
+}
+.main::before{
+content: '';
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: black;
+position: absolute;
+z-index:2;
+border: 2px solid white;
+}
+#hand-wrapper{
+width: 180px;
+height: 180px;
+position: absolute;
+
+/* background-color: blue; */
+}
+#hand{
+background-color: red;
+box-shadow: 0 0 10px red;
+width: 5px;
+height: 90px;
+left:87px;
+position: absolute;
+border-radius:8px;
+
+}
+#hand-wrapper2{
+width: 200px;
+height: 200px;
+position: relative;
+/* background-color: #474762; */
+}
+#hand2{
+background-color: #ff00f7;
+box-shadow: 0 0 10px #ff00f7;
+width: 4px;
+height: 100px;
+left:98px;
+position: absolute;
+border-radius:8px;
+}
+#hand-wrapper3{
+width: 220px;
+height: 220px;
+position: absolute;
+/* background-color: blue; */
+}
+#hand3{
+background-color: #1eff00;
+box-shadow: 0 0 10px #1eff00;
+width: 3px;
+height: 110px;
+left:108.5px;
+position: absolute;
+border-radius:8px;
+
 }
